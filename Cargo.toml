@@ -1,0 +1,21 @@
+[package]
+name = "chat_app_gui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.15"
+futures-util = "0.3"
+egui = "0.17"
+eframe = "0.17"
+rand = "0.8"
+regex = "1"
+
+[[bin]]
+name = "server"
+path = "src/server/main.rs"
+
+[[bin]]
+name = "client"
+path = "src/client/main.rs"
